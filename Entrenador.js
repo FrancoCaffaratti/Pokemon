@@ -4,7 +4,6 @@ module.exports = class Entrenador {
         this.ciudad = ciudad
         this.pokemons = pokemons
         this.batallas = {
-            jugadas: 0,
             ganadas: 0,
             perdidas: 0
         },
@@ -32,7 +31,7 @@ module.exports = class Entrenador {
     }
 
     mostrarBatallas() {
-        return `EQUIPO> ${this.equipo} - JUGADAS: ${this.batallas.jugadas} - GANADAS: ${this.batallas.ganadas} - PERDIDAS: ${this.batallas.perdidas}`
+        return `EQUIPO> ${this.equipo} - JUGADAS: ${this.batallas.ganadas + this.batallas.ganadas} - GANADAS: ${this.batallas.ganadas} - PERDIDAS: ${this.batallas.perdidas}`
     }
 
     mostrarNombre() {
